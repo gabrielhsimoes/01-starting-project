@@ -15,3 +15,23 @@ body {
   padding: 0;
   height: 100%;
 }
+
+/* Para navegadores modernos (Chrome, Edge, Safari) */
+::-webkit-scrollbar {
+  width: 5px; /* Largura da barra vertical */
+  height: 5px; /* Altura da barra horizontal */
+}
+
+::-webkit-scrollbar-track {
+  background: #f7f7f756; /* Fundo da trilha */
+  border-radius: 10px; /* Bordas arredondadas para suavizar */
+
+}
+
+::-webkit-scrollbar-thumb {
+  background: #dcdcdcd1; /* Polegar da barra */
+  border-radius: 10px; /* Bordas arredondadas para suavizar */
+}
+
+
+
