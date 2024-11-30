@@ -1,0 +1,22 @@
+<app-header></app-header>
+<!-- abreviação <app-header /> -->
+
+<main>
+  <ul id="users">
+
+    @for (user of users; track user.id){
+      <li>
+        <app-user [selected]="user.id === selectedUserId" [user]="user" (select)="onSelectUser($event)" />
+        <!-- abreviação quando não tem nenhum conteudo entre as tags -->
+      </li>
+    }
+
+  </ul>
+
+  @if(selectedUser){
+    <app-tasks [userId]="selectedUser.id" [name]="selectedUser.name" />
+    <!-- Se tiver um valor name em selectedUser retorna o valor, senão retorna uma string vazia -->
+  } @else{
+    <p id="fallback">Select a user  to see  their tasks!</p>
+  }
+</main>
