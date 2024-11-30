@@ -27,8 +27,7 @@
             "styles": [
               "src/styles.css"
             ],
-            "scripts": [],
-            "baseHref": "/01-starting-project/"
+            "scripts": []
           },
           "configurations": {
             "production": {
