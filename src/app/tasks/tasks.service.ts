@@ -42,7 +42,6 @@ export class TasksService {
   }
 
   addTask(taskData: NewTaskData, userId: string){
-  //push para adicionar os dados na matriz, e unshift para adicionar no inicio
   this.tasks.unshift({
     id: new Date().getTime().toString(),
     userId: userId,
